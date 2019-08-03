@@ -2,7 +2,7 @@
 	"name": "senko.js",
 	"version": "0.1.0",
 	"description": "The collection of javascirpt library such as GUI, 3DCG etc.",
-	"keywords" : [
+	"keywords": [
 		"senko",
 		"senko.js",
 		"gui",
@@ -15,8 +15,8 @@
 	"main": "./build/Senko.umd.js",
 	"module": "./build/Senko.module.mjs",
 	"repository": {
-		"type" : "git",
-		"url" : "https://github.com/natade-jp/SenkoJS"
+		"type": "git",
+		"url": "https://github.com/natade-jp/SenkoJS"
 	},
 	"directories": {
 		"src": "src",
@@ -28,9 +28,9 @@
 		"build": "node ./package.build.js"
 	},
 	"devDependencies": {
-		"rollup": "^0.67.0",
-		"rollup-plugin-buble": "^0.19.4",
-		"rollup-plugin-uglify": "^6.0.0",
+		"rollup": "^1.18.0",
+		"rollup-plugin-buble": "^0.19.8",
+		"rollup-plugin-uglify": "^6.0.2",
 		"rollup-plugin-uglify-es": "0.0.1"
 	}
 }
