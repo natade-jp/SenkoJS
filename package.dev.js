@@ -15,10 +15,6 @@ saveTextFile(
 	"import Senko from \"../../src/Senko.mjs\";export default Senko;"
 );
 saveTextFile(
-	"./examples/libs/SenkoText.mjs",
-	"import SenkoText from \"../../src/SenkoText.mjs\";export default SenkoText;"
-);
-saveTextFile(
 	"./examples/libs/SenkoS3.mjs",
 	"import SenkoS3 from \"../../src/SenkoS3.mjs\";export default SenkoS3;"
 );

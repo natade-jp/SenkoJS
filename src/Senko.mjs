@@ -14,6 +14,7 @@ import File from "./basic/File.mjs";
 import HashMap from "./basic/HashMap.mjs";
 import Format from "./basic/Format.mjs";
 import Log from "./basic/Log.mjs";
+import Programming from "./basic/Programming.mjs";
 
 import Device from "./device/Device.mjs";
 import ImageProcessing from "./graphics/ImageProcessing.mjs";
@@ -28,6 +29,7 @@ Senko.File = File;
 Senko.HashMap = HashMap;
 Senko.format = Format.format;
 Senko.Log = Log;
+Senko.Programming = Programming;
 Senko.Device = Device;
 Senko.ImageProcessing = ImageProcessing;
 Senko.SComponent = SComponent;
