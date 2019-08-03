@@ -1,7 +1,7 @@
-﻿/*!
- * SenkoJS
- * https://github.com/natade-jp/SenkoJS
- * Copyright 2013-2019 natade
+/*!
+ * jptext.js
+ * https://github.com/natade-jp/jptext
+ * Copyright 2013-2019 natade < https://github.com/natade-jp >
  *
  * The MIT license.
  * https://opensource.org/licenses/MIT

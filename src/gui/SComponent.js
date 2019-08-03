@@ -8,21 +8,21 @@
  *  The MIT license https://opensource.org/licenses/MIT
  */
 
-import SBase from "./components/SBase.mjs";
-import SButton from "./components/SButton.mjs";
-import SCanvas from "./components/SCanvas.mjs";
-import SCheckBox from "./components/SCheckBox.mjs";
-import SColorPicker from "./components/SColorPicker.mjs";
-import SComboBox from "./components/SComboBox.mjs";
-import SFileLoadButton from "./components/SFileLoadButton.mjs";
-import SFileSaveButton from "./components/SFileSaveButton.mjs";
-import SGroupBox from "./components/SGroupBox.mjs";
-import SImagePanel from "./components/SImagePanel.mjs";
-import SLabel from "./components/SLabel.mjs";
-import SPanel from "./components/SPanel.mjs";
-import SProgressBar from "./components/SProgressBar.mjs";
-import SSlidePanel from "./components/SSlidePanel.mjs";
-import SSlider from "./components/SSlider.mjs";
+import SBase from "./components/SBase.js";
+import SButton from "./components/SButton.js";
+import SCanvas from "./components/SCanvas.js";
+import SCheckBox from "./components/SCheckBox.js";
+import SColorPicker from "./components/SColorPicker.js";
+import SComboBox from "./components/SComboBox.js";
+import SFileLoadButton from "./components/SFileLoadButton.js";
+import SFileSaveButton from "./components/SFileSaveButton.js";
+import SGroupBox from "./components/SGroupBox.js";
+import SImagePanel from "./components/SImagePanel.js";
+import SLabel from "./components/SLabel.js";
+import SPanel from "./components/SPanel.js";
+import SProgressBar from "./components/SProgressBar.js";
+import SSlidePanel from "./components/SSlidePanel.js";
+import SSlider from "./components/SSlider.js";
 
 const SComponent = {
 	
