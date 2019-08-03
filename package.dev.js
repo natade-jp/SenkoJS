@@ -12,11 +12,11 @@ const saveTextFile = function(filename, text) {
 // サンプルファイルは直接関連付ける
 saveTextFile(
 	"./examples/libs/Senko.mjs",
-	"import Senko from \"../../src/Senko.mjs\";export default Senko;"
+	"import Senko from \"../../src/Senko.js\";export default Senko;"
 );
 saveTextFile(
 	"./examples/libs/SenkoS3.mjs",
-	"import SenkoS3 from \"../../src/SenkoS3.mjs\";export default SenkoS3;"
+	"import SenkoS3 from \"../../src/SenkoS3.js\";export default SenkoS3;"
 );
 
 

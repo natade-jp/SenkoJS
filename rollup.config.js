@@ -33,9 +33,9 @@ const createData = function(moduleName, input_name, output_name, isES6, isUglify
 
 const data = [];
 
-data.push(createData("Senko", "./src/Senko.mjs", "./build/Senko.module.mjs", true, true));
-data.push(createData("Senko", "./src/Senko.mjs", "./build/Senko.umd.js", false, true));
-data.push(createData("SenkoS3", "./src/SenkoS3.mjs", "./build/SenkoS3.module.mjs", true, true));
-data.push(createData("SenkoS3", "./src/SenkoS3.mjs", "./build/SenkoS3.umd.js", false, true));
+data.push(createData("Senko", "./src/Senko.js", "./build/Senko.module.mjs", true, true));
+data.push(createData("Senko", "./src/Senko.js", "./build/Senko.umd.js", false, true));
+data.push(createData("SenkoS3", "./src/SenkoS3.js", "./build/SenkoS3.module.mjs", true, true));
+data.push(createData("SenkoS3", "./src/SenkoS3.js", "./build/SenkoS3.umd.js", false, true));
 
 export default data;
