@@ -234,6 +234,20 @@ const S3MeshLoaderMQO = {
 		const triangleindex	= mesh.getTriangleIndexArray(); 
 		const material		= mesh.getMaterialArray();
 		
+		// ヘッダ
+		output.push("Metasequoia Document");
+		output.push("Format Text Ver 1.0");
+		output.push("");
+		output.push("Scene {");
+		output.push("	pos 0 0 1500");
+		output.push("	lookat 0 0 0");
+		output.push("	head -0.5236");
+		output.push("	pich 0.5236");
+		output.push("	ortho 0");
+		output.push("	zoom2 5.0000");
+		output.push("	amb 0.250 0.250 0.250");
+		output.push("}");
+
 		// 材質の出力
 		output.push("Material " + material.length + " {");
 		for(let i = 0; i < material.length; i++) {
@@ -265,7 +279,7 @@ const S3MeshLoaderMQO = {
 				line += " M(" + ti.materialIndex + ")";
 				// UVはないかもしれないので、条件を付ける
 				if((ti.uv !== undefined) && (ti.uv[0] !== null)) {
-					line += " UV(" + ti.uv[0] + " " + ti.uv[1] + " " + ti.uv[2] +")";
+					line += " UV(" + ti.uv[0].x + " " + ti.uv[0].y + " " + ti.uv[1].x + " " + ti.uv[1].y + " " + ti.uv[2].x + " " + ti.uv[2].y + ")";
 				}
 				output.push(line);
 			}
@@ -273,6 +287,9 @@ const S3MeshLoaderMQO = {
 		output.push("\t}");
 		
 		output.push("}");
+
+		// End
+		output.push("Eof\n");
 		return output.join("\n");
 	}
 

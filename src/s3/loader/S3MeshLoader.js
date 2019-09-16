@@ -15,12 +15,15 @@ import S3MeshLoaderOBJ from "./S3MeshLoaderOBJ.js";
 const S3MeshLoader = {
 
 	// 他のファイルの読み書きの拡張用
-	inputData: function(s3system, data, type) {
+	inputData: function(s3system, data, type, callback) {
 		const s3mesh = s3system.createMesh();
 		const load = function(ldata, ltype, url) {
 			s3mesh._init();
 			const isLoad = S3MeshLoader._DATA_INPUT_FUNCTION[ltype](s3system, s3mesh, ldata, url);
 			s3mesh.setComplete(isLoad);
+			if(callback) {
+				callback(s3mesh);
+			}
 		};
 		if(((typeof data === "string")||(data instanceof String))&&((data.indexOf("\n") === -1))) {
 			// 1行の場合はURLとみなす（雑）
